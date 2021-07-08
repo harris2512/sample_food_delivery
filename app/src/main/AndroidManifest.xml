@@ -31,13 +31,7 @@
         tools:targetApi="n">
 
 
-        <activity android:name=".ui.activity.HomeActivity" />
-
-
-        <activity
-            android:name="com.project.samplefooddelivery.ui.sample.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.SampleFoodDelivery.NoActionBar">
+        <activity android:name=".ui.activity.signin.SigninActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

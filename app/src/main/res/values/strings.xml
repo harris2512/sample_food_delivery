@@ -1,7 +1,7 @@
 <resources>
 
 
-    <string name="app_name">SampleFoodDelivery</string>
+    <string name="app_name">safood</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -11,5 +11,18 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <!--SIGN IN-->
+    <string name="label_signin_top_desc">one stop quick food delivery app.</string>
+    <string name="hint_signin_mobile_no">Mobile No.</string>
+    <string name="hint_signin_otp">OTP</string>
+    <string name="label_verify">Verify</string>
+    <string name="label_or_signin_with">or sign in with</string>
+
+
+    <!--GLOBAL-->
+    <string name="contentDescription">TODO</string>
+
 
 </resources>

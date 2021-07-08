@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.signin.SigninActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_singin_top_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_login_bg_oval" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="?actionBarSize"
+            android:letterSpacing="0.05"
+            android:text="@string/app_name"
+            android:textAppearance="@style/MyTextAppearance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/headline_regular_3"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_signin_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/sizeThirtyTwo"
+            android:layout_marginEnd="@dimen/sizeThirtyTwo"
+            android:background="@drawable/bg_primary_light_rounded_corner"
+            android:hint="@string/hint_signin_mobile_no"
+            android:inputType="number"
+            android:letterSpacing="0.05"
+            android:paddingStart="@dimen/sizeTwelve"
+            android:paddingEnd="@dimen/sizeTwelve"
+            android:textAppearance="@style/MyTextAppearanceBold"
+            android:textColor="@color/white"
+            android:textColorHint="#eee"
+            android:textSize="@dimen/body_regular" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_signin_otp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/sizeThirtyTwo"
+            android:layout_marginTop="@dimen/sizeSixteen"
+            android:layout_marginEnd="@dimen/sizeThirtyTwo"
+            android:background="@drawable/bg_primary_light_rounded_corner"
+            android:hint="@string/hint_signin_otp"
+            android:inputType="numberPassword"
+            android:letterSpacing="0.5"
+            android:paddingStart="@dimen/sizeTwelve"
+            android:paddingEnd="@dimen/sizeTwelve"
+            android:textAppearance="@style/MyTextAppearanceBold"
+            android:textColor="@color/white"
+            android:textColorHint="#eee"
+            android:textSize="@dimen/body_regular" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signin_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/sizeThirtyTwo"
+            android:background="@drawable/bg_white_rounded_corner_button"
+            android:letterSpacing="0.05"
+            android:paddingStart="@dimen/sizeThirtySix"
+            android:paddingEnd="@dimen/sizeThirtySix"
+            android:text="@string/label_verify"
+            android:textAllCaps="true"
+            android:textAppearance="@style/MyTextAppearanceBold"
+            android:textColor="@color/colorPrimaryDarkSecondary"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/sizeThirtyTwo"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:padding="@dimen/sizeSixteen"
+            android:text="@string/label_or_signin_with"
+            android:textAppearance="@style/MyTextAppearance" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="@dimen/sizeFortySix"
+            android:layout_height="@dimen/sizeFortySix"
+            android:background="@drawable/ic_google_logo"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

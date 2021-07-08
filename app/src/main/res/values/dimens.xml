@@ -16,6 +16,25 @@
     <dimen name="headline_regular_4">60sp</dimen>
     <dimen name="headline_regular_5">96sp</dimen>
 
+
+    <!--For Resource-->
+    <dimen name="sizeTwoDip">2dip</dimen>
+    <dimen name="sizeFourDip">4dip</dimen>
+    <dimen name="sizeSixDip">6dip</dimen>
+    <dimen name="sizeEightDip">8dip</dimen>
+    <dimen name="sizeTenDip">10dip</dimen>
+    <dimen name="sizeTwelveDip">12dip</dimen>
+    <dimen name="sizeFourteenDip">14dip</dimen>
+    <dimen name="sizeSixteenDip">16dip</dimen>
+    <dimen name="sizeEighteenDip">18dip</dimen>
+    <dimen name="sizeTwentyDip">20dip</dimen>
+    <dimen name="sizeTwentySixDip">26dip</dimen>
+    <dimen name="sizeThirtyTwoDip">32dip</dimen>
+
+    <!--Letter Spacing-->
+
+
+
     <!--For Screen-->
     <dimen name="sizeTwo">2dp</dimen>
     <dimen name="sizeFour">4dp</dimen>
