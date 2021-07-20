@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Top-Toolbar-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|start"
+            android:paddingStart="@dimen/sizeSixteen"
+            android:paddingTop="@dimen/sizeEight"
+            android:paddingEnd="@dimen/sizeSixteen"
+            android:paddingBottom="@dimen/sizeEight"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textAppearance="@style/MyCustomBoldFont"
+            android:textColor="@color/white"
+            android:textSize="@dimen/headline_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/img_home_menu"
+                android:layout_width="@dimen/sizeThirty"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/sizeEight"
+                android:background="@null"
+                android:src="@drawable/ic_location"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2.95"
+                android:gravity="center_vertical|start"
+                android:singleLine="true"
+                android:text="@string/dummy_locality"
+                android:textAppearance="@style/MyTextAppearance"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="@dimen/sizeThirtySix"
+                android:layout_height="@dimen/sizeThirtySix"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/sizeEight"
+                android:scaleType="centerCrop"
+                android:src="@drawable/coffee_banner"
+                app:shapeAppearanceOverlay="@style/shapeableCircleImage" />
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_home">
+
+        <!--Main Scroll-->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_include_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_home">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+                <!--Categories-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

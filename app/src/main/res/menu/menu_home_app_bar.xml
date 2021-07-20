@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_home_bar_search"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/menu_home_search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_home_bar_help"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/menu_home_help"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_home_bar_help_support"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/menu_home_support"
+        android:titleCondensed="@string/app_name"
+        android:tooltipText="@string/app_name"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/menu_home_bar_help_cancel"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/menu_home_cancel"
+        android:tooltipText="@string/app_name"
+        app:showAsAction="collapseActionView" />
+
+
+</menu>
