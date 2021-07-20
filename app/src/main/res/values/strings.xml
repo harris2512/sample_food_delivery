@@ -21,8 +21,22 @@
     <string name="label_or_signin_with">or sign in with</string>
 
 
+    <!--HOME-->
+    <string name="menu_home_search">Search</string>
+    <string name="menu_home_help">Help</string>
+    <string name="menu_home_support">Support</string>
+    <string name="menu_home_cancel">Cancel</string>
+
+
     <!--GLOBAL-->
     <string name="contentDescription">TODO</string>
+
+
+    <!--DUMMY-->
+    <string name="dummy_full_address">72, 35th Main, 1st Cross, 100 Feet Ring Rd, near Central Silk Board, KAS Officers Colony, BTM 2nd Stage, Bengaluru, Karnataka 560068</string>
+    <string name="dummy_address">1st Cross, 100 Feet Ring Rd, near Central Silk Board, KAS Officers Colony, BTM 2nd Stage, Bengaluru</string>
+    <string name="dummy_locality">Madiwala, Bengaluru</string>
+    <string name="dummy_name">Jack Sparrow</string>
 
 
 </resources>

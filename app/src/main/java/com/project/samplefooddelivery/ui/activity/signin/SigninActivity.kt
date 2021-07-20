@@ -1,11 +1,13 @@
 package com.project.samplefooddelivery.ui.activity.signin
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.project.samplefooddelivery.databinding.ActivitySigninBinding
+import com.project.samplefooddelivery.ui.activity.home.HomeActivity
 
 
 class SigninActivity : AppCompatActivity() {
@@ -42,6 +44,7 @@ class SigninActivity : AppCompatActivity() {
 
         signinBinding.btnSigninVerify.setOnClickListener {
             showToast("you're verified.!")
+            startActivity(Intent(this, HomeActivity::class.java))
         }
 
 

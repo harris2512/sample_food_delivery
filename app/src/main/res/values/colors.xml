@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--PrimaryColors-->
-    <color name="colorPrimary">#4e342e</color>
-    <color name="colorPrimaryLight">#7b5e57</color>
-    <color name="colorPrimaryDark">#260e04</color>
-    <color name="colorPrimaryDarkSecondary">#3e2723</color>
-    <color name="colorWindowBackground">#fafafa</color>
-    <color name="colorWindowBackgroundDark">#c7c7c7</color>
+    <!--Primary-->
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAscentPrimary">#F4511E</color>
+
+    <color name="colorWindowBackgroundPrimary">#E6FDFDFD</color>
+    <color name="colorTextInputFieldOnPrimaryDark">#2F7832</color>
+    <color name="textPrimaryColor">#fafafa</color>
+    <color name="colorWhiteSmoke">#E6F7F7F7</color>
+    <color name="colorViewBorder">#DBDBDB</color>
 
 
-    <!--SecondaryColors-->
+
+    <!--Secondary-->
+    <color name="colorPrimarySecondary">#455a64</color>
+    <color name="colorPrimaryDarkSecondary">#1c313a</color>
+    <color name="colorAscentSecondary">#718792</color>
+
+    <color name="colorWindowBackgroundSecondary">#EFEFEF</color>
+    <color name="colorTextInputFieldOnSecondaryDark">#132229</color>
+    <color name="textSecondaryColor">#fafafa</color>
+
+
+    <!--Oil Colors-->
     <color name="colorOilGreen">#4CAF50</color>
     <color name="colorOilRed">#F44336</color>
     <color name="colorOilYellow">#FFCA28</color>

@@ -1,4 +1,4 @@
-package com.project.samplefooddelivery
+package com.project.samplefooddelivery.application
 
 import android.app.Application
 

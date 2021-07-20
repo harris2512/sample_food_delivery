@@ -41,7 +41,7 @@
             android:layout_margin="?actionBarSize"
             android:letterSpacing="0.05"
             android:text="@string/app_name"
-            android:textAppearance="@style/MyTextAppearance"
+            android:textAppearance="@style/MyCustomBoldFont"
             android:textColor="@color/white"
             android:textSize="@dimen/headline_regular_3"
             android:textStyle="bold" />

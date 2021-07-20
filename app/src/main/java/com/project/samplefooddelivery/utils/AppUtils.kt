@@ -75,6 +75,7 @@ class AppUtils {
         return s.format(Date(cal.timeInMillis))
     }
 
+
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     fun isNetworkConnected(context: Context): Boolean {
         val connectivityManager =
@@ -96,6 +97,10 @@ class AppUtils {
         return false
     }
 
-
+//    fun isNetworkConnected(context: Context): Boolean {
+//        val connectionManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+//        val networkInfo = connectionManager.activeNetworkInfo
+//        return networkInfo != null && networkInfo.isConnected
+//    }
 
 }

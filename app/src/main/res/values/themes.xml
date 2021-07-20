@@ -1,23 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="Theme.SampleFoodDelivery"  parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.SampleFoodDelivery" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/white</item>
 
         <!-- Customize your theme here. -->
         <item name="android:textViewStyle">@style/CustomTextViewStyle</item>
         <item name="android:windowBackground">@color/white</item>
-        <!--        <item name="android:statusBarColor">@color/white</item>-->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
-        <!--<item name="colorControlNormal">@color/black</item>-->
-
     </style>
-
 
 
     <!--Font Family-->
@@ -35,6 +31,11 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="MyCustomBoldFont" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 
     <!--Alert Dialog-->
     <style name="AlertDialogCustom" parent="Theme.AppCompat.DayNight.Dialog.Alert">
@@ -46,5 +47,10 @@
         <item name="android:fontFamily">@font/ubuntu_regular</item>
     </style>
 
+    <!--Shapeable Image : Circular-->
+    <style name="shapeableCircleImage" parent="">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
 
 </resources>

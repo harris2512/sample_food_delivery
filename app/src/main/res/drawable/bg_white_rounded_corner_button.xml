@@ -3,7 +3,7 @@
 
     <gradient
         android:centerColor="@color/white"
-        android:endColor="@color/colorWindowBackgroundDark"
+        android:endColor="@color/colorViewBorder"
         android:useLevel="true"
         android:type="linear"
         android:startColor="@color/white"
